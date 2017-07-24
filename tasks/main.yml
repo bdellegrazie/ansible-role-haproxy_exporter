@@ -85,6 +85,7 @@
   service:
     name: haproxy_exporter
     enabled: "{{ haproxy_exporter_service_enable }}"
+    use: "{{ prometheus_exporter_service_mgr }}"
   when: haproxy_exporter_service_manage
 
 - name: Service State
@@ -93,5 +94,6 @@
   service:
     name: haproxy_exporter
     state: "{{ haproxy_exporter_service_state }}"
+    use: "{{ prometheus_exporter_service_mgr }}"
   register: _haproxy_exporter_service_state
   when: haproxy_exporter_service_manage
