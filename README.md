@@ -12,8 +12,8 @@ Requires Ansible role `bdellegrazie.ansible-role-prometheus_exporter`
 
 | Variable | Description | Default |
 |----------|-------------|---------|
-| `haproxy_exporter_version`| Version of the exporter to use | `0.14.0` |
-| `haproxy_exporter_tarball_checksum` | checksum of the tarball | sha1 checksum of 0.14.0 tarball |
+| `haproxy_exporter_version`| Version of the exporter to use | `0.7.1` |
+| `haproxy_exporter_tarball_checksum` | checksum of the tarball | sha1 checksum of 0.7.1 tarball |
 | `haproxy_exporter_options`| Command line options | ['-haproxy.scrape-uri=http://admin:admin@localhost:9101/haproxy?stats;csv'] |
 
 Other variables are in defaults/main.yml
