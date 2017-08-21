@@ -26,7 +26,7 @@ Other variables are in defaults/main.yml
 
     - hosts: all
       roles:
-        - { role: bdellegrazie.ansible-role-haproxy_exporter }
+        - { role: bdellegrazie.haproxy_exporter }
 
 # License
 
