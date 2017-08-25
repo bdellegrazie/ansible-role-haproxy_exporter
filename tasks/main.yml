@@ -47,6 +47,7 @@
   unarchive:
     src: "{{ prometheus_exporter_dist_dir }}/{{ haproxy_exporter_signature }}.tar.gz"
     dest: "{{ prometheus_exporter_dist_dir }}"
+    remote_src: true
     owner: root
     group: root
     mode: "u=rwx,go=rx"
