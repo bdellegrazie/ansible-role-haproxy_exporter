@@ -33,6 +33,16 @@
     state: directory
   when: haproxy_exporter_home_manage | bool
 
+- name: logs
+  become: true
+  become_user: root
+  file:
+    path: "{{ haproxy_exporter_log_path }}"
+    owner: "{{ haproxy_exporter_user }}"
+    group: "{{ haproxy_exporter_group }}"
+    mode: "u=rwx,g=rx,o="
+    state: directory
+
 - name: download tarball
   become: true
   become_user: root

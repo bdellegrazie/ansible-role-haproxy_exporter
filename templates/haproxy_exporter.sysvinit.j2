@@ -44,11 +44,6 @@ group="{{ haproxy_exporter_group }}"
 
 start() {
 	[ -r $binary ] || exit 5
-	[ -d $logdir ] || (
-		mkdir -p $logdir
-		chmod 0750 $logdir
-		chown $user:$group $logdir
-	)
 	echo -n $"Starting $name: "
 	daemonize -a -c '/' -e ${logdir}/${name}.err.log -o ${logdir}/${name}.out.log \
 		-p $pidfile -l $lockfile -u $user \
