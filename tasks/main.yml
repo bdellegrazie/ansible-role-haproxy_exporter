@@ -6,6 +6,7 @@
     name: "{{ haproxy_exporter_group }}"
     state: present
     system: true
+  when: haproxy_exporter_group_manage | bool
 
 - name: user
   become: true
@@ -19,6 +20,7 @@
     comment: haproxy_exporter
     state: present
     system: true
+  when: haproxy_exporter_user_manage | bool
 
 - name: home
   become: true
@@ -29,6 +31,7 @@
     group: "{{ haproxy_exporter_group }}"
     mode: "u=rwx,g=rx,o="
     state: directory
+  when: haproxy_exporter_home_manage | bool
 
 - name: download tarball
   become: true
