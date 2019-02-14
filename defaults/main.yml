@@ -4,8 +4,8 @@ haproxy_exporter_user_manage: true
 haproxy_exporter_group: "{{ haproxy_exporter_user }}"
 haproxy_exporter_group_manage: true
 
-haproxy_exporter_version: "0.9.0"
-haproxy_exporter_tarball_checksum: "sha1:593bda9dc0ee050fb5c69b366f911845d72ab888"
+haproxy_exporter_version: "0.10.0"
+haproxy_exporter_tarball_checksum: "sha1:7f47a9205e84f6ca115e67cea953975c3d9c4a1e"
 haproxy_exporter_platform_suffix: "linux-amd64"
 
 haproxy_exporter_options:
