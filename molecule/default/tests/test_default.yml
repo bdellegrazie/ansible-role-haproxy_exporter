@@ -1,0 +1,14 @@
+---
+port:
+  tcp6:9101:
+    listening: true
+
+# 15 character limit on process names
+process:
+  haproxy_exporte:
+    running: true
+
+service:
+  haproxy_exporter:
+    enabled: true
+    running: true

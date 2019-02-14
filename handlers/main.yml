@@ -8,4 +8,4 @@
     use: "{{ prometheus_exporter_service_mgr }}"
   when: haproxy_exporter_service_notify and (
     _haproxy_exporter_service_state is not defined or
-    not ( _haproxy_exporter_service_state | changed ))
+    not ( _haproxy_exporter_service_state is changed ))
