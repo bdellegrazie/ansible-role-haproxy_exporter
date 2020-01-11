@@ -12,6 +12,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Fixed
 ### Security
 
+## [v1.3.2] 2020-01-11
+### Changed
+- Ansible for Molecule updated to 2.9.2
+- Pre-commit updates (minor)
+- Molecule updated (minor)
+- prometheus\_exporter dependency updated to 1.1.3
+
 ## [v1.3.1] 2019-08-12
 ### Added
 ### Changed
