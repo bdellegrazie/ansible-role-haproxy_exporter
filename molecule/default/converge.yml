@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include prometheus_exporter"
+      include_role:
+        name: "ansible-role-haproxy_exporter"
