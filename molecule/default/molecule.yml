@@ -1,17 +1,14 @@
 ---
 dependency:
-  name: gilt
+  name: shell
+  command: gilt --config ${MOLECULE_SCENARIO_DIRECTORY}/gilt.yml overlay
 driver:
   name: docker
 lint: |
   set -e
   yamllint .
+  ansible-lint
 platforms:
-  - name: centos6
-    image: "geerlingguy/docker-centos6-ansible"
-    pull: true
-    pre_build_image: true
-    command: "/sbin/init"
   - name: centos7
     image: docker.io/bdellegrazie/centos-systemd:7
     pull: true

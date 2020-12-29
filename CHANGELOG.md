@@ -7,12 +7,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 ### Changed
-- Ansible for Molecule updated to 2.9.9
+- HAproxy exporter upgraded to 0.12.0
+- Prometheus Exporter dependency trivial update
+- Ansible for Molecule updated to 2.9.16
 - Molecule updates to conincide
 - pre-commit updates (minor)
 - Travis build image to newer version
 ### Deprecated
 ### Removed
+- CentOS 6 as a test target
 ### Fixed
 ### Security
 
@@ -52,7 +55,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Updated to haproxy\_exporter 0.8.0
 
-[Unreleased]: https://github.com/bdellegrazie/ansible-role-postgresql_exporter/compare/v1.3.2...HEAD
+[Unreleased]: https://github.com/bdellegrazie/ansible-role-postgresql_exporter/compare/v1.4.0...HEAD
+[v1.4.0]: https://github.com/bdellegrazie/ansible-role-postgresql_exporter/compare/v1.3.2...v1.4.0
 [v1.3.2]: https://github.com/bdellegrazie/ansible-role-postgresql_exporter/compare/v1.3.1...v1.3.2
 [v1.3.1]: https://github.com/bdellegrazie/ansible-role-postgresql_exporter/compare/v1.3.0...v1.3.1
 [v1.3.0]: https://github.com/bdellegrazie/ansible-role-postgresql_exporter/compare/v1.2.0...v1.3.0
